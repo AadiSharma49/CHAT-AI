@@ -1,8 +1,6 @@
-// eslint-disable-next-line no-unused-vars
+
 import React from 'react'
 import './ChatBotStart.css'
-
-// eslint-disable-next-line react/prop-types
 function ChatBotStart({onStartChat}){
     return (
         <div className='Start-Page'>
