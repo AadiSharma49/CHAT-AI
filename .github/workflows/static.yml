@@ -1,4 +1,18 @@
+# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -19,9 +33,18 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
+
       - name: Build Project
         run: |
           npm run build
+
+      - name: Verify Build Directory
+        run: |
+          if [ ! -d "./build" ]; then
+            echo "Build directory does not exist!"
+            exit 1
+          fi
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
@@ -31,3 +54,5 @@ jobs:
           path: './build'
 
       - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
