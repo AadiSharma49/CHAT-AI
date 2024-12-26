@@ -11,11 +11,7 @@ Welcome to the **AI Chat Bot Website** project! This is a **React.js** web appli
 
 ## 🔒 Important Notes
 
-Due to the **confidentiality of the OpenAI API key**, the necessary configurations for hosting this project publicly are not included in this repository. I am unable to deploy the project as of now because the API key must be kept secret.
-
-### Future Plans:
-- **Backend Integration**: I plan to integrate a backend to securely manage API keys and further enhance the functionality of the AI Chatbot.
-- **Deployment**: The site will be deployed once the backend is ready and API key management is secured.
+I have successfully deployed the project and it is available at: https://aadichat.netlify.app/
 
 ## ⚙️ How to Run the Project Locally
 
