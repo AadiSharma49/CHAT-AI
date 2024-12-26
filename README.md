@@ -7,7 +7,7 @@ Welcome to the **AI Chat Bot Website** project! This is a **React.js** web appli
 - **React.js** – Frontend framework for building the web application.
 - **OpenAI** – For AI-powered chatbot functionality.
 - **CSS** – For styling and making the application responsive.
-- **GitHub Pages** – Hosting (will be added after backend integration for security).
+- **Netlify** – Hosting.
 
 ## 🔒 Important Notes
 
